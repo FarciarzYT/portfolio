@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Footer = () => {
+function IconsBar() {
     return (
         <div>
-            
+
         </div>
     );
-};
+}
 
-export default Footer;
+export default IconsBar;
