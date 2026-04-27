@@ -6,7 +6,7 @@
       "logo": "/img/Gigathon.png",
       "positions": [
         {
-          "title": "Participant",
+          "title": "Uczestnik",
           "start": "2025",
           "end": "1 dzień",
           "description": [
@@ -28,7 +28,7 @@
       "logo": "/img/SFT.bmp",
       "positions": [
         {
-          "title": "Participant",
+          "title": "Uczestnik",
           "start": "12.2025",
           "end": "02.2026",
           "description": [
@@ -42,6 +42,18 @@
             }
             ]
          }
+      ]
+    },
+    {
+      "name": "AI Tinkerers Warsaw",
+      "href": "https://aitinkerers.org/",
+      "logo": "/img/aitinkerers.png",
+      "positions": [
+        {
+          "title": "Uczestnik",
+          "start": "03.2026",
+          "end": "1 dzień"
+        }
       ]
     }
   ]
