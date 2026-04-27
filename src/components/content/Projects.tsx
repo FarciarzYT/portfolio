@@ -13,7 +13,7 @@ const Projects = () => {
             <section className={"mx-auto mt-16 w-full max-w-xl sm:max-w-3xl mb-48"}>
                 <div className="flex flex-row items-center justify-between mb-8 ml-4 mr-4">
                     <h3 className={"font-semibold text-2xl"}>Projekty</h3>
-                    <Link href={"/projects"} className={"text-sm "}>
+                    <Link href={"/projects"} className={"text-sm hover:translate-x-0.5 hover:-translate-y-0.5 hover:text-black text-black/75 transition-all duration-300"}>
                         <span className={"sm:flex hidden"}>Zobacz więcej projektów</span>
                         <CiCircleMore className={"sm:hidden flex"} size={"32"}/>
                     </Link>

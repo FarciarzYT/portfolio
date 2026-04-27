@@ -6,8 +6,8 @@
       "logo": "/img/Gigathon.png",
       "positions": [
         {
-          "title": "Uczestnik",
-          "start": "2025",
+          "title": "#7",
+          "start": "06.2025",
           "end": "1 dzień",
           "description": [
             "#7 miejsce w ogólnopolskim konkursie algorytmicznym w języku Python"
@@ -23,20 +23,20 @@
       ]
     },
     {
-      "name": "Samsung SFT",
+      "name": "Samsung Solve for Tomorrow",
       "href": "https://solvefortomorrow.pl/o-programie/",
       "logo": "/img/SFT.bmp",
       "positions": [
         {
-          "title": "Uczestnik",
+          "title": "półfinalista",
           "start": "12.2025",
           "end": "02.2026",
           "description": [
-            "półfinał w Samsung Solve for Tomorrow, praca nad projektem technologicznym rozwiązującym realny problem."
+            "półfinał w Samsung Solve for Tomorrow, rozwiązywanie realnego problem."
           ],
           "links": [
             {
-              "name": "Nagranie",
+              "name": "Film",
               "href": "https://www.youtube.com/watch?v=-f070q0ycuI",
               "icon": "globe"
             }
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "name": "AI Tinkerers Warsaw",
+      "name": "Google DeepMind x AI Tinkerers Hackathon - Warsaw",
       "href": "https://aitinkerers.org/",
       "logo": "/img/aitinkerers.png",
       "positions": [
