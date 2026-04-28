@@ -36,5 +36,12 @@ export const ProjectsList:ProjectType[] = [
         demo: "false",
         description: "konsolówka do gry w pasjansa",
         href: "/img/projects/pasjans.png"
-    }
+    },
+    {
+        title: "Chemistry Table 3D",
+        github: "https://github.com/TomaszTlusty/Chemistry-Table",
+        demo: "false",
+        description: "wyswietlanie pierwiastków chemicznych w 3D",
+        href: "/img/projects/chemistry.png"
+    },
 ]
