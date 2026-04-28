@@ -64,9 +64,9 @@ export function Navbar() {
 
 
     return (
-        <nav ref={navRef} className="mx-auto mt-8 z-50 w-[100%-2rem] max-w-md">
+        <header ref={navRef} className="mx-auto mt-8 z-50 w-[100%-2rem] max-w-md">
             {/* Desktop Navbar */}
-            <div className="block relative">
+            <nav className="block relative">
                 <div className="relative z-20 flex items-center justify-center bg-mintcream/90 rounded-full px-2 h-16">
                     <ul className="flex items-center gap-1">
                         {navItems.map(({ icon, label }, index) => (
@@ -89,8 +89,8 @@ export function Navbar() {
                         ))}
                     </ul>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
     )
 }
 

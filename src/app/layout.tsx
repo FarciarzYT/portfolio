@@ -37,9 +37,9 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-mintcream text-black">
         <Theme>
           <GridPattern />
-          <Navbar />
           {children}
           <Footer/>
+
         </Theme>
       </body>
     </html>

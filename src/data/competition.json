@@ -18,7 +18,7 @@
               "href": "https://github.com/TomaszTlusty/KlondikeSolitaireCLI",
               "icon": "globe"
             }
-            ]
+          ]
         }
       ]
     },
@@ -32,7 +32,7 @@
           "start": "12.2025",
           "end": "02.2026",
           "description": [
-            "półfinał w Samsung Solve for Tomorrow, rozwiązywanie realnego problem."
+            "Udział w półfinale Samsung Solve for Tomorrow – rozwój projektu rozwiązującego realne wyzwania w obszarze cyberprzestępczości i bezpieczeństwa cyfrowego."
           ],
           "links": [
             {
@@ -40,8 +40,8 @@
               "href": "https://www.youtube.com/watch?v=-f070q0ycuI",
               "icon": "globe"
             }
-            ]
-         }
+          ]
+        }
       ]
     },
     {
@@ -52,7 +52,39 @@
         {
           "title": "Uczestnik",
           "start": "03.2026",
-          "end": "1 dzień"
+          "end": "1 dzień",
+          "description": [
+            "Tworzenie aplikacji z integracją VAPI + GEMINI 3.1 flash"
+          ],
+          "links": [
+            {
+              "name": "Film",
+              "href": "https://www.youtube.com/watch?v=YMm5TVMW_j4",
+              "icon": "globe"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TechQuest Hackathon - Leżajsk",
+      "href": "https://www.techquest.zst.lezajsk.pl/",
+      "logo": "/img/lezajsk.png",
+      "positions": [
+        {
+          "title": "#5 miejsce",
+          "start": "03.2026",
+          "end": "2 dni",
+          "description": [
+            "Tworzenie Aplikacji Sponsora Wydarzenia"
+          ],
+          "links": [
+            {
+              "name": "Film",
+              "href": "https://youtu.be/QGSleg4mf80",
+              "icon": "globe"
+            }
+          ]
         }
       ]
     }

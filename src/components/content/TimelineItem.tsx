@@ -62,7 +62,7 @@ export default function TimelineItem({ experience }: Props) {
               {position.links && position.links.length > 0 && (
                 <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
                   {position.links.map((link) => (
-                    <Link href={link.href} key={link.href}>
+                    <Link href={link.href} key={link.href} target={"_blank"}>
                       <Badge title={link.name} className="flex gap-2">
                         <Icon
                           name={link.icon}
