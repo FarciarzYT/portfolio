@@ -1,11 +1,9 @@
-import Hero from "@/components/content/Hero"
-import Experience from "@/components/content/Experience";
-import Projects from "@/components/content/Projects";
-import Navbar from "@/components/base/Header";
+import ProjectsBox from "@/components/content/ProjectsBox";
+
 export default function Home(){
     return (
         <main>
-
+            <ProjectsBox/>
         </main>
     )
 }
