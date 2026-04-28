@@ -37,7 +37,7 @@ export default function Hero() {
                 </div>
             </div>
             <div className={"sm:w-[50%] sm:max-w-[50%] items-center justify-center z-10 "}>
-                <Image src={"/img/tlusty.png"} alt={"Selfie Tomasza"} width={310}  height={250} className={"rounded-3xl mx-auto sm:ml-auto sm:mr-4 hover:scale-105 transition-all duration-300"} />
+                <Image src={"/img/tlusty.webp"} alt={"Selfie Tomasza"} width={310}  height={250} loading="eager" className={"rounded-3xl mx-auto sm:ml-auto sm:mr-4 hover:scale-105 transition-all duration-300"} />
             </div>
         </section>
     );

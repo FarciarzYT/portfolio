@@ -3,7 +3,7 @@
     {
       "name": "Gigathon",
       "href": "https://www.gigathon.pl/",
-      "logo": "/img/tab/Gigathon.png",
+      "logo": "/img/tab/Gigathon.webp",
       "positions": [
         {
           "title": "finalista #7",
@@ -25,7 +25,7 @@
     {
       "name": "Samsung Solve for Tomorrow",
       "href": "https://solvefortomorrow.pl/o-programie/",
-      "logo": "/img/tab/SFT.bmp",
+      "logo": "/img/tab/SFT.webp",
       "positions": [
         {
           "title": "półfinalista",
@@ -47,7 +47,7 @@
     {
       "name": "Google DeepMind x AI Tinkerers Hackathon - Warsaw",
       "href": "https://aitinkerers.org/",
-      "logo": "/img/tab/aitinkerers.png",
+      "logo": "/img/tab/aitinkerers.webp",
       "positions": [
         {
           "title": "Uczestnik",
@@ -69,7 +69,7 @@
     {
       "name": "TechQuest Hackathon - Leżajsk",
       "href": "https://www.techquest.zst.lezajsk.pl/",
-      "logo": "/img/tab/lezajsk.png",
+      "logo": "/img/tab/lezajsk.webp",
       "positions": [
         {
           "title": "#5 miejsce",

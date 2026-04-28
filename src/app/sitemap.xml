@@ -1,0 +1,17 @@
+<urlset xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9 https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://tlusty.vercel.app/</loc>
+        <lastmod>2026-04-28T20:12:21+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://tlusty.vercel.app/projects</loc>
+        <lastmod>2026-04-28T20:12:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://tlusty.vercel.app/about</loc>
+        <lastmod>2026-04-28T20:12:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+</urlset>
