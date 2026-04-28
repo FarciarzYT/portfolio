@@ -3,6 +3,7 @@ import Experience from "@/components/content/Experience";
 import Projects from "@/components/content/Projects";
 import HackTimeSpend from "@/components/content/HackTimeSpend";
 import TechStack from "@/components/content/TechStack";
+import Footer from "@/components/base/Footer";
 
 export default function Home(){
   return (
@@ -12,6 +13,7 @@ export default function Home(){
           <Projects/>
           <TechStack/>
           <HackTimeSpend/>
+          <Footer/>
       </main>
   )
 }
