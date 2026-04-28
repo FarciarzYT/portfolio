@@ -11,8 +11,8 @@ const filteredProjectsList = ProjectsList.slice(0, 2)
 const Projects = () => {
     return (
             <section className={"mx-auto mt-16 w-full max-w-xl sm:max-w-3xl"}>
-                <div className="flex flex-row items-center justify-between mb-8 ml-4 mr-4">
-                    <h3 className={"font-semibold text-2xl"}>Projekty</h3>
+                <div className="flex flex-row items-center justify-between mb-8 ">
+                    <h3 className={"font-bold text-2xl"}>Projekty</h3>
                     <Link href={"/projects"} className={"text-sm hover:translate-x-0.5 hover:-translate-y-0.5 hover:text-black text-black/75 transition-all duration-300"}>
                         <span className={"sm:flex hidden"}>Zobacz więcej projektów</span>
                         <CiCircleMore className={"sm:hidden flex"} size={"32"}/>
@@ -27,7 +27,7 @@ const Projects = () => {
                                 width={300}
                                 height={250}
                                 sizes="(max-width: 768px) 100vw, 50vw"
-                                className={"w-full h-auto rounded-3xl border border-gray-200 aspect-video object-cover "}
+                                className={"w-full h-auto rounded-3xl border border-gray-200 aspect-video object-cover hover:scale-105 transition-all duration-300"}
                             />
                             <h4 className={"font-semibold text-xl mt-2"}>{project.title}</h4>
 

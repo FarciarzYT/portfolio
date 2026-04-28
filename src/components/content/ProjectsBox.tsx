@@ -20,7 +20,7 @@ const Projects = () => {
                             width={300}
                             height={250}
                             sizes="(max-width: 768px) 100vw, 50vw"
-                            className={"w-full h-auto rounded-3xl border border-gray-200 aspect-video object-cover "}
+                            className={"w-full h-auto rounded-3xl border border-gray-200 aspect-video object-cover hover:scale-105 transition-all duration-300"}
                         />
                         <h4 className={"font-semibold text-xl mt-2"}>{project.title}</h4>
 

@@ -2,8 +2,8 @@ import React from 'react';
 
 const AboutText = () => {
     return (
-        <section className="mx-auto w-full max-w-3xl mt-32">
-            <h2 className="text-2xl font-bold tracking-tight text-black">
+        <section className="mx-auto w-full max-w-3xl mt-16 px-4">
+            <h2 className="text-2xl font-bold tracking-tight text-black ">
                 O Mnie
             </h2>
 
