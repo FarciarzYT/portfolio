@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import GridPattern from "@/components/ui/grid-pattern";
 import { Theme } from "@radix-ui/themes";
@@ -8,17 +7,6 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing, type Locale } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
-import { Space_Grotesk } from 'next/font/google'
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -39,7 +27,6 @@ export async function generateMetadata({
       template: "%s | Tomasz Tłusty",
     },
     description: t('description'),
-    authors: [{ name: "Tomasz Tłusty" }],
     creator: "Tomasz Tłusty",
     openGraph: {
       title: "Tomasz Tłusty – Portfolio",
@@ -93,7 +80,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-mintcream text-black">
         <NextIntlClientProvider messages={messages}>
