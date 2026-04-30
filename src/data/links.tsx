@@ -9,7 +9,7 @@ export const links: LinksType[] = [
     icon: <SlDocs className="text-xs" />,
   },
   {
-    href: "mailto:tomek.tlustyxd@gmail.com",
+    href: "mailto:kontakt@tlusty.dev",
     title: "Kontakt",
     icon: <GrContact className="text-xs" />,
   },
@@ -22,7 +22,7 @@ export const linksEn: LinksType[] = [
     icon: <SlDocs className="text-xs" />,
   },
   {
-    href: "mailto:tomek.tlustyxd@gmail.com",
+    href: "mailto:kontakt@tlusty.dev",
     title: "Contact",
     icon: <GrContact className="text-xs" />,
   },
