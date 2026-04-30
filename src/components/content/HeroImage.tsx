@@ -8,26 +8,24 @@ export default function HeroImage({ alt }: { alt: string }) {
 
     return (
         <div
-            className="relative w-77.5 h-62.5 mx-auto sm:ml-auto sm:mr-4 cursor-pointer"
+            className="relative w-[310px] h-[370px] mx-auto sm:ml-auto sm:mr-4 cursor-pointer"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
         >
             <Image
                 src="/img/tlusty.webp"
                 alt={alt}
-                width={310}
-                height={250}
+                fill
                 loading="eager"
-                className={`rounded-3xl absolute inset-0 transition-opacity duration-500 ${
+                className={`rounded-3xl object-cover object-top transition-opacity duration-500 ${
                     hovered ? 'opacity-0' : 'opacity-100'
                 }`}
             />
             <Image
-                src="/img/tlusty-avatar.webp"
+                src="/img/tlusty-avatar.png"
                 alt="Avatar"
-                width={310}
-                height={250}
-                className={`rounded-3xl absolute inset-0 transition-opacity duration-500 ${
+                fill
+                className={`rounded-3xl object-cover object-top transition-opacity duration-500 ${
                     hovered ? 'opacity-100' : 'opacity-0'
                 }`}
             />
