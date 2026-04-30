@@ -55,7 +55,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: "Tomasz Tłusty – Portfolio",
       description: t('twitterDescription'),
-      images: ["/og-image.png"],
+      images: ["/og-image.webp"],
     },
     robots: {
       index: true,

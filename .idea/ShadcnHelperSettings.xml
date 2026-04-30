@@ -2190,6 +2190,30 @@
         <option name="homepage" value="https://shieldcn.dev" />
         <option name="urlTemplate" value="https://shieldcn.dev/r/{name}.json" />
       </RegistryConfigState>
+      <RegistryConfigState>
+        <option name="id" value="central-nordaun" />
+        <option name="name" value="Nordaun" />
+        <option name="namespace" value="@nordaun" />
+        <option name="baseUrl" value="https://ui.nordaun.com/r" />
+        <option name="stylePath" value="/{name}.json" />
+        <option name="type" value="community" />
+        <option name="enabled" value="false" />
+        <option name="description" value="Simple components for your extraordinary creations." />
+        <option name="homepage" value="https://ui.nordaun.com" />
+        <option name="urlTemplate" value="https://ui.nordaun.com/r/{name}.json" />
+      </RegistryConfigState>
+      <RegistryConfigState>
+        <option name="id" value="central-delta" />
+        <option name="name" value="Delta" />
+        <option name="namespace" value="@delta" />
+        <option name="baseUrl" value="https://deltacomponents.dev/r" />
+        <option name="stylePath" value="/{name}.json" />
+        <option name="type" value="community" />
+        <option name="enabled" value="false" />
+        <option name="description" value="A shadcn registry for AI and media-rich interfaces — streaming LLM chat, zoomable images, swipeable card decks, interactive maps, plus dashboard and landing-page blocks." />
+        <option name="homepage" value="https://deltacomponents.dev" />
+        <option name="urlTemplate" value="https://deltacomponents.dev/r/{name}.json" />
+      </RegistryConfigState>
     </registryConfigs>
   </component>
 </project>

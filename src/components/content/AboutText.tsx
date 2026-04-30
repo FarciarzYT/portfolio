@@ -5,7 +5,7 @@ const AboutText = async () => {
   const t = await getTranslations('about');
 
   return (
-    <section className="mx-auto w-full max-w-3xl mt-16">
+    <section className="mx-auto w-full max-w-3xl mt-16 px-4 sm:px-0">
       <h2 className="text-2xl font-bold tracking-tight text-black">
         {t('title')}
       </h2>
