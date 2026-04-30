@@ -29,7 +29,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'metadata' });
 
   return {
-    metadataBase: new URL("https://tlusty.vercel.app/"),
+    metadataBase: new URL("https://tlusty.dev"),
     title: {
       default: "Tomasz Tłusty – Portfolio",
       template: "%s | Tomasz Tłusty",
@@ -39,7 +39,7 @@ export async function generateMetadata({
     openGraph: {
       title: "Tomasz Tłusty – Portfolio",
       description: t('ogDescription'),
-      url: "https://tlusty.vercel.app",
+      url: "https://tlusty.dev",
       siteName: "Tomasz Tłusty Portfolio",
       images: [
         {
