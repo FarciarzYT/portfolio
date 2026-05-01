@@ -15,7 +15,7 @@ const TechStack = async () => {
             className="flex flex-row items-center gap-2 bg-mintcream/80 text-black/80 rounded-3xl py-0.5 px-3 hover:translate-x-1 hover:-translate-y-0.5 transition-all duration-300"
           >
             {language.icon}
-            <h5>{language.title}</h5>
+            <h4>{language.title}</h4>
           </div>
         ))}
       </div>

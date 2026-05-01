@@ -36,7 +36,7 @@ const Projects = async () => {
               sizes="(max-width: 768px) 100vw, 50vw"
               className="w-full h-auto rounded-3xl border border-gray-200 aspect-video object-cover hover:scale-105 transition-all duration-300"
             />
-            <h4 className="font-semibold text-xl mt-2">{project.title}</h4>
+            <h3 className="font-semibold text-xl mt-2">{project.title}</h3>
             <p className="font-medium text-sm h-12 overflow-hidden">{project.description}</p>
             <div className="flex flex-row items-center gap-4 mt-2">
               <UserLink title="Github" href={project.github} icon={<FaGithub />} />

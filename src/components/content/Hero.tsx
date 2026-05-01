@@ -18,13 +18,13 @@ export default async function Hero() {
             Tomasz Tłusty
           </h1>
 
-          <h3 className="mt-2 text-sm font-semibold text-black flex flex-row items-center gap-1">
+          <h2 className="mt-2 text-sm font-semibold text-black flex flex-row items-center gap-1">
             {t('role')}
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 10" width="20" height="13" style={{ borderRadius: 2, border: '0.5px solid rgba(0,0,0,0.15)' }}>
               <rect width="16" height="5" fill="#fff"/>
               <rect y="5" width="16" height="5" fill="#dc143c"/>
             </svg>
-          </h3>
+          </h2>
 
           <p className="mt-4 font-medium leading-relaxed text-black sm:w-full max-w-xl">
             {t('tagline')}
