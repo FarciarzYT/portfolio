@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
         rules: {
             userAgent: '*',
             allow: '/',
-            disallow: ['/api/', '/_next/'],
+            disallow: ['/api/'],
         },
         sitemap: 'https://tlusty.dev/sitemap.xml',
         host: 'https://tlusty.dev',
