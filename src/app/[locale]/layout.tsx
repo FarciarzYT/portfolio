@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "../globals.css";
 import GridPattern from "@/components/ui/grid-pattern";
@@ -12,79 +12,97 @@ import ConsoleEasterEgg from "@/components/content/ConsoleEasterEgg";
 
 const jakartaSans = Plus_Jakarta_Sans({
   variable: "--font-jakarta-sans",
-  subsets: ["latin"],
-  weight: ["400", "500","700"],
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500", "700"],
+  display: "swap",
 });
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({
-                                         params,
-                                       }: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
-  const { locale } = await params;
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f5fffa" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
+  ],
+  width: "device-width",
+  initialScale: 1,
+};
+
+export async function generateMetadata(
+    props: LayoutProps<'/[locale]'>
+): Promise<Metadata> {
+  const { locale } = await props.params;
   const t = await getTranslations({ locale, namespace: 'metadata' });
+
+  const title = "Tomasz Tłusty – Full-Stack Developer & Hardware Maker";
 
   return {
     metadataBase: new URL("https://tlusty.dev"),
     title: {
-      default: "Tomasz Tłusty – Portfolio",
+      default: title,
       template: "%s | Tomasz Tłusty",
     },
     description: t('description'),
     creator: "Tomasz Tłusty",
+    authors: [{ name: "Tomasz Tłusty", url: "https://tlusty.dev" }],
+    keywords: locale === 'en'
+        ? ["Tomasz Tłusty", "portfolio", "full-stack developer", "Next.js", "TypeScript", "ESP32", "PCB", "cybersecurity", "Poland developer"]
+        : ["Tomasz Tłusty", "portfolio", "programista", "Next.js", "TypeScript", "ESP32", "PCB", "cyberbezpieczeństwo", "Polska"],
+
+    alternates: {
+      canonical: locale === 'pl' ? '/' : `/${locale}`,
+      languages: {
+        'pl-PL': '/',
+        'en-US': '/en',
+        'x-default': '/',
+      },
+    },
+
     openGraph: {
-      title: "Tomasz Tłusty – Portfolio",
+      title,
       description: t('ogDescription'),
-      url: "https://tlusty.dev",
+      url: locale === 'pl' ? "https://tlusty.dev" : `https://tlusty.dev/${locale}`,
       siteName: "Tomasz Tłusty Portfolio",
       images: [
         {
           url: "/og-image.png",
           width: 1200,
           height: 630,
-          alt: "Portfolio Tomasz Tłusty",
+          alt: locale === 'en' ? "Tomasz Tłusty Portfolio" : "Portfolio Tomasz Tłusty",
         },
       ],
       locale: locale === 'en' ? 'en_US' : 'pl_PL',
+      alternateLocale: locale === 'en' ? 'pl_PL' : 'en_US',
       type: "website",
     },
+
     twitter: {
       card: "summary_large_image",
-      title: "Tomasz Tłusty – Portfolio",
+      title,
       description: t('twitterDescription'),
       images: ["/og-image.png"],
     },
+
     robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
     },
-    icons: {
-      icon: [
-        { url: "/favicon.ico" },
-        { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-        { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      ],
-      apple: { url: "/apple-touch-icon.png" },
-      other: [
-        { rel: "icon", url: "/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
-        { rel: "icon", url: "/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
-      ],
-    },
+
+    category: "technology",
   };
 }
 
-export default async function LocaleLayout({
-                                             children,
-                                             params,
-                                           }: {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
+export default async function LocaleLayout(props: LayoutProps<'/[locale]'>) {
+  const { locale } = await props.params;
 
   if (!routing.locales.includes(locale as Locale)) {
     notFound();
@@ -98,13 +116,14 @@ export default async function LocaleLayout({
       <html
           lang={locale}
           className={`${jakartaSans.variable} h-full antialiased`}
+          suppressHydrationWarning
       >
       <body className="min-h-full flex flex-col bg-mintcream text-black font-sans">
       <NextIntlClientProvider messages={messages}>
         <Theme style={{ fontFamily: 'var(--font-jakarta-sans)' }}>
           <ConsoleEasterEgg />
           <GridPattern />
-          {children}
+          {props.children}
           <Footer />
         </Theme>
       </NextIntlClientProvider>
