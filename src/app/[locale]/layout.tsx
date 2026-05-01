@@ -51,19 +51,6 @@ export async function generateMetadata(
     keywords: locale === 'en'
         ? ["Tomasz Tłusty", "portfolio", "full-stack developer", "Next.js", "TypeScript", "ESP32", "PCB", "cybersecurity", "Poland developer"]
         : ["Tomasz Tłusty", "portfolio", "programista", "Next.js", "TypeScript", "ESP32", "PCB", "cyberbezpieczeństwo", "Polska"],
-
-    icons: {
-      icon: [
-        { url: "/favicon.ico", sizes: "any" },
-        { url: "/favicon.svg", type: "image/svg+xml" },
-        { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
-      ],
-      apple: [
-        { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-      ],
-    },
-    manifest: "/site.webmanifest",
-
     alternates: {
       canonical: locale === 'pl' ? '/' : `/${locale}`,
       languages: {
@@ -74,18 +61,9 @@ export async function generateMetadata(
     },
 
     openGraph: {
-      title,
       description: t('ogDescription'),
       url: locale === 'pl' ? "https://tlusty.dev" : `https://tlusty.dev/${locale}`,
       siteName: "Tomasz Tłusty Portfolio",
-      images: [
-        {
-          url: "/og-image.png",
-          width: 1200,
-          height: 630,
-          alt: locale === 'en' ? "Tomasz Tłusty Portfolio" : "Portfolio Tomasz Tłusty",
-        },
-      ],
       locale: locale === 'en' ? 'en_US' : 'pl_PL',
       alternateLocale: locale === 'en' ? 'pl_PL' : 'en_US',
       type: "website",
@@ -95,7 +73,6 @@ export async function generateMetadata(
       card: "summary_large_image",
       title,
       description: t('twitterDescription'),
-      images: ["/og-image.png"],
     },
 
     robots: {
