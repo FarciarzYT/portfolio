@@ -1,10 +1,11 @@
 import React from 'react';
-import { getTranslations } from 'next-intl/server';
+import {getLocale, getTranslations} from 'next-intl/server';
 import Link from "next/link";
 import AntiScrapingTelephone from '@/components/content/AntiScrapingTelephone'
 
 const ContactInfo = async () => {
   const t = await getTranslations('contact');
+  const locale = await getLocale()
 
   return (
     <section className="mx-auto w-full max-w-3xl mt-16 px-4 sm:px-0">
@@ -13,7 +14,7 @@ const ContactInfo = async () => {
       </h2>
       <ol className="mt-6 font-medium leading-relaxed text-black">
         <ul className="select-none mt-2">
-          <AntiScrapingTelephone/>
+          <AntiScrapingTelephone locale={locale} />
         </ul>
         <ul className="select-none mt-2 text-sm font-medium text-black/60 hover:text-black transition-colors">
           {t('email')} <Link href={"mailto:kontakt@tlusty.dev"} target={"_blank"} className="select-text">kontakt@tlusty.dev</Link>
