@@ -5,6 +5,7 @@ export default function JsonLd() {
         "@type": "Person",
         "name": "Tomasz Tłusty",
         "url": "https://tlusty.dev",
+        "image": "https://tlusty.dev/img/tlusty.webp",
         "sameAs": [
             "https://github.com/TomaszTlusty",
             "https://www.linkedin.com/in/tlusty/",
